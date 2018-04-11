@@ -13,7 +13,7 @@
         "lint": "ng lint",
         "e2e": "ng e2e",
         "watch-dev": "concurrently \"node watch-electron.js\" \"ng build --base-href $(pwd)/dist/app/ --watch --stats-json --output-path dist/app\"",
-        "watch-and-run": "concurrently \"node watch-electron.js\" \"ng build --watch --stats-json --output-path dist/app\" \"npm run electron\""
+        "watch-and-run": "concurrently \"node watch-electron.js\" \"ng build --base-href $(pwd)/dist/app/ --watch --stats-json --output-path dist/app\" \"npm run electron\""
     },
     "author": "Guilherme Fontenele <guilherme@fontenele.net>",
     "license": "MIT",
